@@ -3,7 +3,8 @@ import Home from "../src/pages/Home/Index"
 import Clock from "../src/components/Clock/Clock"
 import { Dispatch, SetStateAction, useState } from "react"
 import Tabs from "../src/components/Tabs/Tabs"
-import Title from "../src/pages/Home/tittle"
+import Title from "./pages/Ticker/tittle"
+import About from "../src/pages/About/index"
 
 export const Router = () => {
     const [clock, setClock] = useState (1)
@@ -16,6 +17,7 @@ export const Router = () => {
             <Routes>
 
                 <Route path="/" element={<Home/>} />
+                <Route path="/About" element={<About/>} />
                 {/* <Route path="/iniciar" element={<Lista></Lista>} ></Route> */}
                         
             </Routes>
